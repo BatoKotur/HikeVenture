@@ -1,10 +1,10 @@
 namespace FirstTest {
     console.log("Hello");
 
-    window.addEventListener("load", main);
+    window.addEventListener("load", init);
     import f = FudgeCore;
 
-    function main(_event: Event): void {
+    function init(_event: Event): void {
         let node: f.Node = new f.Node("Node");
         let cmpCamera: f.ComponentCamera = new f.ComponentCamera();
         let canvas: HTMLCanvasElement = document.querySelector("canvas");
